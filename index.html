@@ -8,40 +8,58 @@
 <meta name="description" content="Thai Tailor House offers bespoke suits, wedding tuxedos, and custom shirts in Thailand. Premium fabrics and expert tailoring.">
 
 <style>
+
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* BRAND COLORS */
+:root {
+  --thai-red: #A51931;
+  --thai-blue: #2D2A4A;
+  --thai-white: #FFFFFF;
+}
+
+/* BODY */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background: #f4f4f4;
-  color: #333;
+  background: var(--thai-white);
+  color: var(--thai-blue);
 }
 
+/* HEADER */
 header {
-  background: #111;
-  color: white;
-  padding: 20px;
+  background: var(--thai-blue);
+  color: var(--thai-white);
+  padding: 25px;
   text-align: center;
+  border-bottom: 5px solid var(--thai-red);
 }
 
+header h1 {
+  letter-spacing: 2px;
+}
+
+/* NAV */
 nav a {
-  color: white;
+  color: var(--thai-white);
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
 }
 
 nav a:hover {
-  color: gold;
+  color: var(--thai-red);
 }
 
+/* HERO */
 .hero {
-  background: #000;
-  color: white;
+  background: var(--thai-red);
+  color: var(--thai-white);
   height: 400px;
   display: flex;
   align-items: center;
@@ -50,35 +68,46 @@ nav a:hover {
   padding: 20px;
 }
 
+/* SECTIONS */
 section {
   padding: 60px 20px;
   text-align: center;
 }
 
+/* SERVICES */
 .services {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
 }
 
 .box {
-  background: white;
+  background: var(--thai-white);
   padding: 30px;
   width: 280px;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border: 2px solid var(--thai-blue);
+  transition: 0.3s;
 }
 
+.box:hover {
+  border-color: var(--thai-red);
+  transform: translateY(-5px);
+}
+
+/* CONTACT */
 .contact {
-  background: #111;
-  color: white;
+  background: var(--thai-blue);
+  color: var(--thai-white);
   padding: 50px 20px;
+  border-top: 5px solid var(--thai-red);
 }
 
+/* FOOTER */
 footer {
-  background: black;
-  color: white;
+  background: var(--thai-red);
+  color: var(--thai-white);
   text-align: center;
   padding: 20px;
   font-size: 14px;
@@ -90,6 +119,7 @@ footer {
     align-items: center;
   }
 }
+
 </style>
 </head>
 
