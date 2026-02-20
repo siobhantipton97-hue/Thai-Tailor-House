@@ -115,3 +115,12 @@ footer {
   text-align: center;
   padding: 20px;
 }
+.contact-info a {
+  color: #012169;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  color: #C8102E;
+}
